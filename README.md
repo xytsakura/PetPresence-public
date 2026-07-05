@@ -34,9 +34,9 @@ The first public release has two release surfaces:
 ## Demo Preview
 
 <p align="center">
-  <img src="docs/images/bichon-demo-idle.gif" alt="Xiaobai idle desktop pet animation" width="220" />
-  <img src="docs/images/bichon-demo-play.gif" alt="Xiaobai play desktop pet animation" width="220" />
-  <img src="docs/images/bichon-demo-sleep.gif" alt="Xiaobai sleep desktop pet animation" width="220" />
+  <img src="docs/images/bichon-demo-idle.webp" alt="Xiaobai idle desktop pet animation" width="220" />
+  <img src="docs/images/bichon-demo-play.webp" alt="Xiaobai play desktop pet animation" width="220" />
+  <img src="docs/images/bichon-demo-sleep.webp" alt="Xiaobai sleep desktop pet animation" width="220" />
 </p>
 
 ## Quickstart

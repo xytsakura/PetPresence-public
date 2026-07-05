@@ -29,7 +29,7 @@
       "match": "docs/images/",
       "match_type": "prefix",
       "decision": "keep",
-      "note": "Approved README and documentation visuals for the public release, including the Bichon demo photo, workflow diagram, and lightweight demo GIFs."
+      "note": "Approved README and documentation visuals for the public release, including the Bichon demo photo, workflow diagram, and lightweight transparent animated WebP previews."
     }
   ]
 }

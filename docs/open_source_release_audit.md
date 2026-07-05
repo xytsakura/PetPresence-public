@@ -188,7 +188,7 @@ keep-review: 31
 keep: 31
 ```
 
-所有当前 `pet_demo`、`pet_bichon_demo` public fixture 文件，以及 README 使用的 `docs/images/` 展示图、流程图和 demo GIF，均由 `docs/release_asset_decisions.json` 的 `keep` 规则覆盖。
+所有当前 `pet_demo`、`pet_bichon_demo` public fixture 文件，以及 README 使用的 `docs/images/` 展示图、流程图和透明 animated WebP demo 预览，均由 `docs/release_asset_decisions.json` 的 `keep` 规则覆盖。
 
 ## 已完成的发布守门
 
