@@ -8,6 +8,12 @@
   <strong>English</strong> | <a href="README.zh-CN.md">简体中文</a>
 </p>
 
+## Team Acknowledgements
+
+PetPresence began as a hackathon project led by `xytsakura`, with collaboration from `fhx020826`, `KKqdtjo`, `de2-a`, `liam-harrison1`, `zhu-zhu666`, `Wyh-max-star`, and `zhujiandong`.
+
+This public repository is a clean-history open-source release. The original private hackathon repository remains preserved as the team archive, including the earlier collaboration and commit history. See [CONTRIBUTORS.md](CONTRIBUTORS.md) for the full acknowledgement.
+
 PetPresence is an open-source creator pipeline for making your own private desktop pet.
 
 The project started as a hackathon demo about a real-pet-state-driven companion agent. The open-source direction is now simpler and more useful for individuals: give the project your pet photos, short action videos, and personality notes, then use the included Agent-friendly workflow to turn them into a transparent Electron desktop companion.

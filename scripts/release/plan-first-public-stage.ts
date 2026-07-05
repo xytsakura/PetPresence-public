@@ -198,6 +198,7 @@ function isPublicReleasePath(filePath: string): boolean {
       ".gitignore",
       "README.md",
       "README.zh-CN.md",
+      "CONTRIBUTORS.md",
       "CHANGELOG.md",
       "CONTRIBUTING.md",
       "LICENSE",

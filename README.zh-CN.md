@@ -8,6 +8,12 @@
   <a href="README.md">English</a> | <strong>简体中文</strong>
 </p>
 
+## 团队鸣谢
+
+PetPresence 起源于一次黑客松项目，由 `xytsakura` 作为队长推进，并由 `fhx020826`、`KKqdtjo`、`de2-a`、`liam-harrison1`、`zhu-zhu666`、`Wyh-max-star`、`zhujiandong` 共同参与协作。
+
+当前公开仓库是为了正式开源而整理出的 clean-history 发布版；原始黑客松私有仓库仍作为团队档案保留，里面保存着更早的协作和提交历史。完整鸣谢见 [CONTRIBUTORS.md](CONTRIBUTORS.md)。
+
 PetPresence 是一个开源的桌面宠物制作流程。它不是一个要求你部署摄像头、云端识别和长期监控服务的复杂系统；当前开源版本的核心目标更朴素：让你在 Agent 的帮助下，用自己的宠物照片、短视频或视频生成模型输出，做出一个本地运行、可手动切换动作的私人桌面宠物。
 
 项目最早来自一个黑客松 demo，当时的故事是“真实宠物状态驱动桌面陪伴 Agent”。现在的开源方向已经收束为更容易部署、更低成本、更适合个人使用的版本：上传或准备宠物素材，让 Agent 帮你生成制作计划、动作 prompt、素材清单和桌宠配置，最后在本地 Electron 桌宠里跑起来。

@@ -21,6 +21,7 @@ const errors: string[] = [];
 
 await expectFile("README.md");
 await expectFile("README.zh-CN.md");
+await expectFile("CONTRIBUTORS.md");
 await expectFile("CHANGELOG.md");
 await expectFile("LICENSE");
 await expectFile("PRIVACY.md");
@@ -122,6 +123,7 @@ for (const scriptName of [
 const readme = await readText("README.md");
 expectText(readme, "open-source creator pipeline", "README must present the creator pipeline");
 expectText(readme, "README.zh-CN.md", "README must link to the Simplified Chinese README");
+expectText(readme, "CONTRIBUTORS.md", "README must link to team acknowledgements");
 expectText(readme, "docs/images/bichon-xiaobai.jpg", "README must show the public Bichon demo pet image");
 expectText(readme, "two release surfaces", "README must describe both public release surfaces");
 expectText(readme, "docs/quickstart.md", "README must point to quickstart");
@@ -224,6 +226,7 @@ expectText(releaseAudit, "27", "release audit must mention the current full publ
 
 const readmeZhCn = await readText("README.zh-CN.md");
 expectText(readmeZhCn, "README.md", "Chinese README must link back to English README");
+expectText(readmeZhCn, "CONTRIBUTORS.md", "Chinese README must link to team acknowledgements");
 expectText(readmeZhCn, "PetPresence 是一个开源的桌面宠物制作流程", "Chinese README must describe the project in Chinese");
 expectText(readmeZhCn, "npm run smoke:bichon", "Chinese README must document the Bichon demo smoke");
 expectText(readmeZhCn, "docs/user_guide_create_private_pet.md", "Chinese README must point to the non-technical user guide");
