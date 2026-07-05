@@ -25,6 +25,20 @@ The first public release has two release surfaces:
 1. **Creator Pipeline**: the reusable Agent-assisted workflow for making a private desktop pet from your own media or generated clips.
 2. **Xiaobai / Bichon Demo**: a cleaned ready-to-run desktop pet demo, `pet_bichon_demo`, with six WebM actions and no private event history.
 
+## Pipeline Workflow
+
+<p align="center">
+  <img src="docs/images/creator-pipeline-workflow.svg" alt="PetPresence creator pipeline workflow" width="920" />
+</p>
+
+## Demo Preview
+
+<p align="center">
+  <img src="docs/images/bichon-demo-idle.gif" alt="Xiaobai idle desktop pet animation" width="220" />
+  <img src="docs/images/bichon-demo-play.gif" alt="Xiaobai play desktop pet animation" width="220" />
+  <img src="docs/images/bichon-demo-sleep.gif" alt="Xiaobai sleep desktop pet animation" width="220" />
+</p>
+
 ## Quickstart
 
 If you want the shortest path, start here:

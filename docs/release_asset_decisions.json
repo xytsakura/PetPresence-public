@@ -26,10 +26,10 @@
       "note": "Approved public Bichon demo runtime WebM assets."
     },
     {
-      "match": "docs/images/bichon-xiaobai.jpg",
-      "match_type": "exact",
+      "match": "docs/images/",
+      "match_type": "prefix",
       "decision": "keep",
-      "note": "Approved README visual for the public Bichon demo pet."
+      "note": "Approved README and documentation visuals for the public release, including the Bichon demo photo, workflow diagram, and lightweight demo GIFs."
     }
   ]
 }

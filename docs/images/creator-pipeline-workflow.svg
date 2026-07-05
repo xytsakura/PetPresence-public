@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="520" viewBox="0 0 1280 520" role="img" aria-labelledby="title desc">
+  <title id="title">PetPresence creator pipeline workflow</title>
+  <desc id="desc">A five-step workflow from private pet media to an Agent plan, generated action clips, a local manifest, and the Electron desktop pet runtime.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f3ea"/>
+      <stop offset="0.55" stop-color="#eef6f3"/>
+      <stop offset="1" stop-color="#f7efe9"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#263238" flood-opacity="0.13"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5d6f76"/>
+    </marker>
+    <style>
+      .title { font: 700 36px Arial, sans-serif; fill: #1f2933; }
+      .subtitle { font: 400 18px Arial, sans-serif; fill: #50616b; }
+      .step-title { font: 700 20px Arial, sans-serif; fill: #1f2933; }
+      .step-copy { font: 400 14px Arial, sans-serif; fill: #52636d; }
+      .badge { font: 700 13px Arial, sans-serif; fill: #ffffff; }
+      .label { font: 700 13px Arial, sans-serif; fill: #37505c; }
+      .tiny { font: 400 12px Arial, sans-serif; fill: #6b7c84; }
+    </style>
+  </defs>
+
+  <rect width="1280" height="520" rx="0" fill="url(#bg)"/>
+  <rect x="36" y="34" width="1208" height="452" rx="28" fill="#ffffff" opacity="0.72"/>
+
+  <text x="74" y="92" class="title">PetPresence Creator Pipeline</text>
+  <text x="74" y="126" class="subtitle">Turn private pet media and model-generated clips into a local desktop companion, with Agent-readable steps and release-safe boundaries.</text>
+
+  <g transform="translate(70 178)">
+    <g filter="url(#softShadow)">
+      <rect x="0" y="0" width="196" height="214" rx="8" fill="#ffffff"/>
+      <rect x="0" y="0" width="196" height="8" rx="4" fill="#d97757"/>
+    </g>
+    <circle cx="38" cy="42" r="18" fill="#d97757"/>
+    <text x="33" y="47" class="badge">1</text>
+    <text x="22" y="84" class="step-title">Private Inputs</text>
+    <text x="22" y="116" class="step-copy">Pet photos, notes,</text>
+    <text x="22" y="137" class="step-copy">short videos, or</text>
+    <text x="22" y="158" class="step-copy">generated clips.</text>
+    <text x="22" y="190" class="tiny">No default upload.</text>
+  </g>
+
+  <g transform="translate(308 178)">
+    <g filter="url(#softShadow)">
+      <rect x="0" y="0" width="196" height="214" rx="8" fill="#ffffff"/>
+      <rect x="0" y="0" width="196" height="8" rx="4" fill="#3f8f86"/>
+    </g>
+    <circle cx="38" cy="42" r="18" fill="#3f8f86"/>
+    <text x="33" y="47" class="badge">2</text>
+    <text x="22" y="84" class="step-title">Agent Planning</text>
+    <text x="22" y="116" class="step-copy">Create brief, action</text>
+    <text x="22" y="137" class="step-copy">plan, prompts, and</text>
+    <text x="22" y="158" class="step-copy">upload consent notes.</text>
+    <text x="22" y="190" class="tiny">Human confirms first.</text>
+  </g>
+
+  <g transform="translate(546 178)">
+    <g filter="url(#softShadow)">
+      <rect x="0" y="0" width="196" height="214" rx="8" fill="#ffffff"/>
+      <rect x="0" y="0" width="196" height="8" rx="4" fill="#5d7fbd"/>
+    </g>
+    <circle cx="38" cy="42" r="18" fill="#5d7fbd"/>
+    <text x="33" y="47" class="badge">3</text>
+    <text x="22" y="84" class="step-title">Action Assets</text>
+    <text x="22" y="116" class="step-copy">Use provider APIs,</text>
+    <text x="22" y="137" class="step-copy">local imports, or</text>
+    <text x="22" y="158" class="step-copy">handmade videos.</text>
+    <text x="22" y="190" class="tiny">Idle, play, sleep...</text>
+  </g>
+
+  <g transform="translate(784 178)">
+    <g filter="url(#softShadow)">
+      <rect x="0" y="0" width="196" height="214" rx="8" fill="#ffffff"/>
+      <rect x="0" y="0" width="196" height="8" rx="4" fill="#8a6fb0"/>
+    </g>
+    <circle cx="38" cy="42" r="18" fill="#8a6fb0"/>
+    <text x="33" y="47" class="badge">4</text>
+    <text x="22" y="84" class="step-title">Local Manifest</text>
+    <text x="22" y="116" class="step-copy">Register transparent</text>
+    <text x="22" y="137" class="step-copy">WebM assets in</text>
+    <text x="22" y="158" class="step-copy">action_assets.json.</text>
+    <text x="22" y="190" class="tiny">Validated by CLI.</text>
+  </g>
+
+  <g transform="translate(1022 178)">
+    <g filter="url(#softShadow)">
+      <rect x="0" y="0" width="196" height="214" rx="8" fill="#ffffff"/>
+      <rect x="0" y="0" width="196" height="8" rx="4" fill="#c58a3a"/>
+    </g>
+    <circle cx="38" cy="42" r="18" fill="#c58a3a"/>
+    <text x="33" y="47" class="badge">5</text>
+    <text x="22" y="84" class="step-title">Desktop Pet</text>
+    <text x="22" y="116" class="step-copy">Electron runtime</text>
+    <text x="22" y="137" class="step-copy">loads actions for</text>
+    <text x="22" y="158" class="step-copy">manual/rule switching.</text>
+    <text x="22" y="190" class="tiny">Runs locally.</text>
+  </g>
+
+  <g stroke="#5d6f76" stroke-width="3" fill="none" marker-end="url(#arrow)" opacity="0.86">
+    <path d="M 270 285 L 300 285"/>
+    <path d="M 508 285 L 538 285"/>
+    <path d="M 746 285 L 776 285"/>
+    <path d="M 984 285 L 1014 285"/>
+  </g>
+
+  <g transform="translate(78 424)">
+    <rect x="0" y="0" width="1124" height="34" rx="8" fill="#edf2f0"/>
+    <text x="20" y="22" class="label">Default open-source path:</text>
+    <text x="204" y="22" class="tiny">rule-driven or manual desktop pet; realtime camera monitoring and multimodal observer services remain optional experimental extensions.</text>
+  </g>
+</svg>

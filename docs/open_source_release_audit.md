@@ -165,10 +165,10 @@ release:audit-assets -- --fail-on-unresolved
 `npm run release:audit-assets -- --json` 当前摘要：
 
 ```text
-candidate_file_count: 27
-tracked_file_count: 5
-untracked_file_count: 21
-reviewed_file_count: 27
+candidate_file_count: 31
+tracked_file_count: 27
+untracked_file_count: 4
+reviewed_file_count: 31
 unresolved_file_count: 0
 blocking_file_count: 0
 ```
@@ -178,17 +178,17 @@ blocking_file_count: 0
 ```text
 pet-media: 8
 pet-config: 18
-readme-visual: 1
+readme-visual: 5
 ```
 
 决策：
 
 ```text
-keep-review: 27
-keep: 27
+keep-review: 31
+keep: 31
 ```
 
-所有当前 `pet_demo`、`pet_bichon_demo` public fixture 文件，以及 README 使用的 `docs/images/` 展示图，均由 `docs/release_asset_decisions.json` 的 `keep` 规则覆盖。
+所有当前 `pet_demo`、`pet_bichon_demo` public fixture 文件，以及 README 使用的 `docs/images/` 展示图、流程图和 demo GIF，均由 `docs/release_asset_decisions.json` 的 `keep` 规则覆盖。
 
 ## 已完成的发布守门
 

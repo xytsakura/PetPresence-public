@@ -32,4 +32,3 @@ No items.
 2. Stage files by topic, not all at once.
 3. After staging, inspect `git diff --cached --name-status`.
 4. If private legacy workspaces, shelter media, presentation artifacts, `outputs/`, frames, events, reports, `.env`, or real API keys appear as additions, stop and unstage them.
-

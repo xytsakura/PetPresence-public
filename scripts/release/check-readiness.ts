@@ -53,6 +53,10 @@ await expectFile("docs/open_source_release_audit.md");
 await expectFile("docs/bichon_demo_resource_audit.md");
 await expectFile("docs/release_asset_decisions.json");
 await expectFile("docs/images/bichon-xiaobai.jpg");
+await expectFile("docs/images/creator-pipeline-workflow.svg");
+await expectFile("docs/images/bichon-demo-idle.gif");
+await expectFile("docs/images/bichon-demo-play.gif");
+await expectFile("docs/images/bichon-demo-sleep.gif");
 await expectFile("data/pets/pet_demo/profile.json");
 await expectFile("data/pets/pet_demo/agent.md");
 await expectFile("data/pets/pet_demo/creator_brief.md");
@@ -125,6 +129,10 @@ expectText(readme, "open-source creator pipeline", "README must present the crea
 expectText(readme, "README.zh-CN.md", "README must link to the Simplified Chinese README");
 expectText(readme, "CONTRIBUTORS.md", "README must link to team acknowledgements");
 expectText(readme, "docs/images/bichon-xiaobai.jpg", "README must show the public Bichon demo pet image");
+expectText(readme, "docs/images/creator-pipeline-workflow.svg", "README must show the creator pipeline workflow diagram");
+expectText(readme, "docs/images/bichon-demo-idle.gif", "README must show the Bichon idle demo GIF");
+expectText(readme, "docs/images/bichon-demo-play.gif", "README must show the Bichon play demo GIF");
+expectText(readme, "docs/images/bichon-demo-sleep.gif", "README must show the Bichon sleep demo GIF");
 expectText(readme, "two release surfaces", "README must describe both public release surfaces");
 expectText(readme, "docs/quickstart.md", "README must point to quickstart");
 expectText(readme, "pet_demo", "README must point to pet_demo as the public fixture");
@@ -222,11 +230,13 @@ expectText(releaseAudit, "release:check-hygiene", "release audit must include pu
 expectText(releaseAudit, "release:check-staged", "release audit must include staged public release check");
 expectText(releaseAudit, "smoke:public-hygiene", "release audit must include public hygiene smoke");
 expectText(releaseAudit, "smoke:staged-release", "release audit must include staged release smoke");
-expectText(releaseAudit, "27", "release audit must mention the current full public fixture and README visual count");
+expectText(releaseAudit, "31", "release audit must mention the current full public fixture and README visual count");
 
 const readmeZhCn = await readText("README.zh-CN.md");
 expectText(readmeZhCn, "README.md", "Chinese README must link back to English README");
 expectText(readmeZhCn, "CONTRIBUTORS.md", "Chinese README must link to team acknowledgements");
+expectText(readmeZhCn, "docs/images/creator-pipeline-workflow.svg", "Chinese README must show the creator pipeline workflow diagram");
+expectText(readmeZhCn, "docs/images/bichon-demo-idle.gif", "Chinese README must show the Bichon idle demo GIF");
 expectText(readmeZhCn, "PetPresence 是一个开源的桌面宠物制作流程", "Chinese README must describe the project in Chinese");
 expectText(readmeZhCn, "npm run smoke:bichon", "Chinese README must document the Bichon demo smoke");
 expectText(readmeZhCn, "docs/user_guide_create_private_pet.md", "Chinese README must point to the non-technical user guide");

@@ -339,7 +339,7 @@ function categorize(
     };
   }
 
-  if (/^docs\/images\/.+\.(png|jpg|jpeg|webp|gif)$/i.test(filePath)) {
+  if (/^docs\/images\/.+\.(png|jpg|jpeg|webp|gif|svg)$/i.test(filePath)) {
     return {
       category: "readme-visual",
       reason: "README and documentation images require explicit publication review",
