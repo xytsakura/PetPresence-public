@@ -1,5 +1,110 @@
 ﻿# PetPresence
 
+<p align="center">
+  <img src="docs/images/bichon-xiaobai.jpg" alt="Xiaobai, the public Bichon demo pet" width="360" />
+</p>
+
+<p align="center">
+  <strong>中文</strong> | <a href="#english">English</a>
+</p>
+
+## 中文
+
+PetPresence 是一个开源的桌面宠物制作流程。它不是一个要求你部署摄像头、云端识别和长期监控服务的复杂系统；当前开源版本的核心目标更朴素：让你在 Agent 的帮助下，用自己的宠物照片、短视频或视频生成模型输出，做出一个本地运行、可手动切换动作的私人桌面宠物。
+
+这个仓库公开了两套东西：
+
+- **Creator Pipeline**：一套可复用的 Agent-assisted 制作流程。你可以把宠物素材、动作设定和视频生成 API 交给 Codex、Claude Code、GLM、DeepSeek 等 Agent harness，让它按项目里的 recipe 一步步生成 brief、动作 prompt、素材清单、动作 manifest，并把桌宠跑起来。
+- **Xiaobai / Bichon Demo**：一只已经清理好的小白狗桌宠 demo，`pet_bichon_demo`，包含 `idle`、`eat`、`sleep`、`alert`、`play`、`out_of_view` 六个 WebM 动作，可以直接运行。
+
+<p align="center">
+  <img src="docs/images/petpresence-hackathon-poster.png" alt="PetPresence hackathon one-page poster" width="720" />
+</p>
+
+上面这张图来自最早的黑客松路演版本。当时的故事是“真实宠物状态驱动桌面陪伴 Agent”。现在的开源版本已经收束为更容易部署、更低成本、更适合个人使用的方向：本地桌宠 + 规则/手动切换 + Agent 辅助制作流程。实时摄像头、多模态识别、event stream、日报和问答模块仍保留为 experimental reference，不是默认使用路径。
+
+### 快速开始
+
+安装依赖：
+
+```powershell
+npm install
+npm --prefix apps/desktop install
+```
+
+检查本地环境：
+
+```powershell
+npm run pet:doctor
+```
+
+运行公开的小白狗 demo：
+
+```powershell
+npm run smoke:bichon
+npm run demo:bichon
+```
+
+运行最小 synthetic fixture：
+
+```powershell
+npm run pet:validate -- --pet-id pet_demo
+npm run desktop -- --pet-id pet_demo
+```
+
+### 制作你自己的桌宠
+
+推荐把下面这两个文件先交给你的 Agent：
+
+```text
+docs/user_guide_create_private_pet.md
+docs/agent-recipes/create-your-pet.md
+```
+
+典型流程是：
+
+1. 准备宠物照片、短视频，或者视频生成模型 API。
+2. 让 Agent 运行 `pet:doctor` 检查环境。
+3. 用 `pet:init` 创建你的宠物工作区。
+4. 用 `pet:create-brief` 记录宠物身份、动作需求、素材边界、API 上传许可和验收标准。
+5. 用 `pet:scaffold-actions` 生成动作计划和每个动作的 prompt。
+6. 用真实素材、视频生成模型或本地导入命令得到动作视频。
+7. 用 `pet:add-action` 注册动作素材，必要时转换成透明 WebM。
+8. 用 `pet:validate` 校验 `action_assets.json`。
+9. 用 `npm run desktop -- --pet-id <pet_id>` 启动桌宠预览。
+
+示例命令：
+
+```powershell
+npm run pet:init -- --pet-id pet_huahua --name Huahua --species cat --description "A calm orange cat"
+npm run pet:create-brief -- --pet-id pet_huahua --actions idle,sleep,eat,play --upload-consent "ask every time before uploading pet media"
+npm run pet:scaffold-actions -- --pet-id pet_huahua --actions idle,sleep,eat,play
+npm run pet:add-action -- --pet-id pet_huahua --action idle --input "D:\pets\huahua_idle.webm" --skip-alpha --loop true
+npm run pet:validate -- --pet-id pet_huahua
+npm run desktop -- --pet-id pet_huahua
+```
+
+### 隐私边界
+
+PetPresence 默认是 local-first。不要把你自己的宠物原始视频、API key、`outputs/`、抽帧、event JSONL、日报或中间预览图提交到公开仓库。公开版本只保留了经过清理和审核的 `pet_demo` 与 `pet_bichon_demo`。
+
+发布前可以运行：
+
+```powershell
+npm run verify:quick
+npm run release:preflight
+```
+
+### 中文用户推荐阅读顺序
+
+- `docs/quickstart.md`：最快跑起来。
+- `docs/user_guide_create_private_pet.md`：非技术用户如何让 Agent 帮你做自己的桌宠。
+- `docs/agent-recipes/create-your-pet.md`：直接给 Agent 的执行说明。
+- `docs/provider_adapter_cookbook.md`：如何接入真实视频生成 API。
+- `docs/media_and_data_policy.md`：哪些素材可以公开，哪些必须留在本地。
+
+## English
+
 PetPresence is an open-source creator pipeline for making your own private desktop pet.
 
 The project started as a hackathon demo about a real-pet-state-driven companion agent. The open-source direction is now simpler and more useful for individuals: give the project your pet photos, short action videos, and personality notes, then use the included Agent-friendly workflow to turn them into a transparent Electron desktop companion.

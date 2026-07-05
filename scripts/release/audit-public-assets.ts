@@ -51,7 +51,7 @@ const flags = readFlags(process.argv.slice(2));
 const jsonOutput = booleanFlag("json");
 const failOnUnresolved = booleanFlag("fail-on-unresolved");
 
-const candidates = await gitCandidateFiles(["assets", "data", "outputs"]);
+const candidates = await gitCandidateFiles(["assets", "data", "outputs", "docs/images"]);
 const decisionFile = await loadDecisionFile();
 const items = await auditFiles(candidates, decisionFile.rules);
 const summary = summarize(candidates, items);
@@ -339,6 +339,14 @@ function categorize(
     };
   }
 
+  if (/^docs\/images\/.+\.(png|jpg|jpeg|webp|gif)$/i.test(filePath)) {
+    return {
+      category: "readme-visual",
+      reason: "README and documentation images require explicit publication review",
+      recommendation: "keep-review",
+    };
+  }
+
   return null;
 }
 
@@ -373,7 +381,7 @@ function summarize(candidates: Map<string, AuditItem["git_status"]>, items: Audi
 function printHumanSummary(summary: AuditSummary): void {
   console.log("PetPresence public asset audit");
   console.log("");
-  console.log(`Candidate files under assets/data/outputs: ${summary.candidate_file_count}`);
+  console.log(`Candidate files under assets/data/outputs/docs/images: ${summary.candidate_file_count}`);
   console.log(`Tracked candidate files: ${summary.tracked_file_count}`);
   console.log(`Untracked candidate files: ${summary.untracked_file_count}`);
   console.log(`Files requiring release review: ${summary.reviewed_file_count}`);
