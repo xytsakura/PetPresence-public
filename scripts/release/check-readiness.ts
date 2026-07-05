@@ -20,6 +20,7 @@ const execFileAsync = promisify(execFile);
 const errors: string[] = [];
 
 await expectFile("README.md");
+await expectFile("README.zh-CN.md");
 await expectFile("CHANGELOG.md");
 await expectFile("LICENSE");
 await expectFile("PRIVACY.md");
@@ -51,7 +52,6 @@ await expectFile("docs/open_source_release_audit.md");
 await expectFile("docs/bichon_demo_resource_audit.md");
 await expectFile("docs/release_asset_decisions.json");
 await expectFile("docs/images/bichon-xiaobai.jpg");
-await expectFile("docs/images/petpresence-hackathon-poster.png");
 await expectFile("data/pets/pet_demo/profile.json");
 await expectFile("data/pets/pet_demo/agent.md");
 await expectFile("data/pets/pet_demo/creator_brief.md");
@@ -121,10 +121,8 @@ for (const scriptName of [
 
 const readme = await readText("README.md");
 expectText(readme, "open-source creator pipeline", "README must present the creator pipeline");
-expectText(readme, "## 中文", "README must include a Chinese section");
-expectText(readme, "## English", "README must include an English section");
+expectText(readme, "README.zh-CN.md", "README must link to the Simplified Chinese README");
 expectText(readme, "docs/images/bichon-xiaobai.jpg", "README must show the public Bichon demo pet image");
-expectText(readme, "docs/images/petpresence-hackathon-poster.png", "README must show the hackathon-origin poster");
 expectText(readme, "two release surfaces", "README must describe both public release surfaces");
 expectText(readme, "docs/quickstart.md", "README must point to quickstart");
 expectText(readme, "pet_demo", "README must point to pet_demo as the public fixture");
@@ -222,7 +220,14 @@ expectText(releaseAudit, "release:check-hygiene", "release audit must include pu
 expectText(releaseAudit, "release:check-staged", "release audit must include staged public release check");
 expectText(releaseAudit, "smoke:public-hygiene", "release audit must include public hygiene smoke");
 expectText(releaseAudit, "smoke:staged-release", "release audit must include staged release smoke");
-expectText(releaseAudit, "28", "release audit must mention the current full public fixture and README visual count");
+expectText(releaseAudit, "27", "release audit must mention the current full public fixture and README visual count");
+
+const readmeZhCn = await readText("README.zh-CN.md");
+expectText(readmeZhCn, "README.md", "Chinese README must link back to English README");
+expectText(readmeZhCn, "PetPresence 是一个开源的桌面宠物制作流程", "Chinese README must describe the project in Chinese");
+expectText(readmeZhCn, "npm run smoke:bichon", "Chinese README must document the Bichon demo smoke");
+expectText(readmeZhCn, "docs/user_guide_create_private_pet.md", "Chinese README must point to the non-technical user guide");
+expectText(readmeZhCn, "npm run release:preflight", "Chinese README must document release preflight");
 
 const firstPublicReleaseRunbook = await readText("docs/first_public_release_runbook.md");
 expectText(firstPublicReleaseRunbook, "npm run release:preflight", "first public release runbook must include preflight");

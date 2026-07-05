@@ -30,12 +30,6 @@
       "match_type": "exact",
       "decision": "keep",
       "note": "Approved README visual for the public Bichon demo pet."
-    },
-    {
-      "match": "docs/images/petpresence-hackathon-poster.png",
-      "match_type": "exact",
-      "decision": "keep",
-      "note": "Approved README visual documenting the hackathon origin; README labels it as origin context, not the default open-source deployment path."
     }
   ]
 }

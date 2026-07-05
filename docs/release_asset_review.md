@@ -6,12 +6,11 @@ This file records the public asset boundary for the first PetPresence open-sourc
 
 ## Current Decision
 
-The public release keeps exactly two fixture families and two README visuals:
+The public release keeps exactly two fixture families and one README visual:
 
 - synthetic `pet_demo`;
 - cleaned ready-to-run `pet_bichon_demo`.
 - `docs/images/bichon-xiaobai.jpg` as the public Bichon demo photo;
-- `docs/images/petpresence-hackathon-poster.png` as labeled hackathon-origin context.
 
 The release does not include source videos, raw private workspaces, extracted frames, event logs, generated reports, alpha previews, contact sheets, checker images, local model outputs, `.env` files, or API keys.
 
@@ -72,7 +71,6 @@ README visuals:
 
 ```text
 docs/images/bichon-xiaobai.jpg
-docs/images/petpresence-hackathon-poster.png
 ```
 
 ## Keep Out Of The Public Release

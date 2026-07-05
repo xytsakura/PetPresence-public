@@ -165,10 +165,10 @@ release:audit-assets -- --fail-on-unresolved
 `npm run release:audit-assets -- --json` 当前摘要：
 
 ```text
-candidate_file_count: 28
+candidate_file_count: 27
 tracked_file_count: 5
 untracked_file_count: 21
-reviewed_file_count: 28
+reviewed_file_count: 27
 unresolved_file_count: 0
 blocking_file_count: 0
 ```
@@ -178,14 +178,14 @@ blocking_file_count: 0
 ```text
 pet-media: 8
 pet-config: 18
-readme-visual: 2
+readme-visual: 1
 ```
 
 决策：
 
 ```text
-keep-review: 28
-keep: 28
+keep-review: 27
+keep: 27
 ```
 
 所有当前 `pet_demo`、`pet_bichon_demo` public fixture 文件，以及 README 使用的 `docs/images/` 展示图，均由 `docs/release_asset_decisions.json` 的 `keep` 规则覆盖。

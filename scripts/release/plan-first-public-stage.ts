@@ -197,6 +197,7 @@ function isPublicReleasePath(filePath: string): boolean {
       ".env.example",
       ".gitignore",
       "README.md",
+      "README.zh-CN.md",
       "CHANGELOG.md",
       "CONTRIBUTING.md",
       "LICENSE",
