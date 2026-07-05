@@ -1,0 +1,38 @@
+{
+  "pet_id": "pet_demo",
+  "default_action": "idle",
+  "idle_action": "idle",
+  "version": "public-demo-v1",
+  "coordinate_system": {
+    "width": 512,
+    "height": 512,
+    "transparent_background": true
+  },
+  "event_server": {
+    "http_base": "http://127.0.0.1:4317",
+    "ws_url": "ws://127.0.0.1:4317/events/stream?pet_id=pet_demo"
+  },
+  "observer": {
+    "mock_url": "http://127.0.0.1:3002/observe/mock",
+    "current_url": "http://127.0.0.1:3002/observe/current",
+    "qa_url": "http://127.0.0.1:3002/qa/today"
+  },
+  "assets": {
+    "idle": {
+      "type": "webm",
+      "path": "assets/pets/pet_demo/idle/idle.webm",
+      "transparent_background": true,
+      "loop": true,
+      "duration_ms": 3000,
+      "fallback_message": "Demo pet is here."
+    },
+    "wave_paw": {
+      "type": "webm",
+      "path": "assets/pets/pet_demo/wave_paw/wave_paw.webm",
+      "transparent_background": true,
+      "loop": false,
+      "duration_ms": 2200,
+      "fallback_message": "Tiny wave."
+    }
+  }
+}

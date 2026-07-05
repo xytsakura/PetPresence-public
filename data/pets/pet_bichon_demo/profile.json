@@ -1,0 +1,15 @@
+{
+  "pet_id": "pet_bichon_demo",
+  "name": "Xiaobai",
+  "type": "dog",
+  "breed": "bichon-style white companion dog",
+  "description": "A cleaned public desktop-pet demo made from the original hackathon Xiaobai action set.",
+  "speech_style": {
+    "max_chars": 24,
+    "tone": "short, cute, low-interruption",
+    "catchphrases": [
+      "woof~",
+      "hi~"
+    ]
+  }
+}

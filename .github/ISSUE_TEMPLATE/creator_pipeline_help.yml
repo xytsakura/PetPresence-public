@@ -1,0 +1,59 @@
+name: Creator pipeline help
+description: Ask for help creating or validating a private desktop pet.
+title: "[Creator]: "
+labels:
+  - creator-pipeline
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form when the default creator pipeline is confusing or failing. Do not attach private pet photos/videos unless you explicitly want to publish them.
+  - type: input
+    id: pet_id
+    attributes:
+      label: pet_id
+      description: Use the local ASCII id, not the pet's private name if you prefer privacy.
+      placeholder: pet_huahua
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Where are you stuck?
+      options:
+        - Installing dependencies
+        - Running pet_demo
+        - Creating a new pet workspace
+        - Scaffolding action prompts
+        - Importing an MP4
+        - Converting MP4 to transparent WebM
+        - Validating action_assets.json
+        - Launching the desktop pet
+        - Improving action quality
+    validations:
+      required: true
+  - type: textarea
+    id: actions
+    attributes:
+      label: Actions you are trying to create
+      placeholder: idle, sleep, play
+  - type: textarea
+    id: commands
+    attributes:
+      label: Commands and output
+      render: powershell
+      placeholder: |
+        npm run pet:doctor -- --pet-id <pet_id>
+        npm run pet:validate -- --pet-id <pet_id>
+    validations:
+      required: true
+  - type: textarea
+    id: media_source
+    attributes:
+      label: Media source
+      description: Say whether you are using self-shot clips, local generated MP4s, provider:example, or a real provider. Do not paste private URLs or keys.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I understand assets/pets/<pet_id>/, data/pets/<pet_id>/, and outputs/ may contain private local media or generated data.
+          required: true

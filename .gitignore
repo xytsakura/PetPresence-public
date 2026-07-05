@@ -1,0 +1,43 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
+dist/
+build/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Local generated outputs
+outputs/
+*.log
+
+# PetPresence local creator outputs
+data/pets/*/events/
+data/pets/*/frames/
+data/pets/*/reports/
+assets/pets/*/*/*.alpha_preview.jpg
+assets/pets/*/*/*.alpha_contact_sheet.jpg
+assets/pets/*/*/*_preview_checker.png
+
+# Legacy/private release material.
+assets/private/
+data/private/
+assets/legacy/
+data/legacy/
+assets/shelter/
+data/shelter_pets.json

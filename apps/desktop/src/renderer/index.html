@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetPresence Desktop</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main id="app" class="shell" data-action="idle">
+      <section class="pet-stack">
+        <section id="petStage" class="pet-stage" aria-label="PetPresence 桌宠">
+          <div id="bubble" class="bubble" hidden></div>
+          <div id="petVisual" class="pet-visual">
+            <video id="petVideo" class="pet-video" muted playsinline></video>
+            <div id="petFallback" class="pet-fallback" aria-live="polite">
+              <div class="pet-body">
+                <div class="ear ear-left"></div>
+                <div class="ear ear-right"></div>
+                <div class="face">
+                  <span class="eye"></span>
+                  <span class="nose"></span>
+                  <span class="eye"></span>
+                </div>
+                <div class="action-mark" id="actionMark">idle</div>
+              </div>
+              <div class="shadow"></div>
+            </div>
+          </div>
+        </section>
+
+        <div class="pet-controls" aria-label="桌宠控制">
+          <button id="menuButton" class="menu-button" type="button" title="打开菜单">⋯</button>
+        </div>
+      </section>
+
+      <aside id="qaPanel" class="qa-popover" hidden>
+        <div class="qa-shell">
+          <div class="qa-popover-header">
+            <strong>今日问答</strong>
+            <button id="closeQaPanel" type="button" title="关闭">×</button>
+          </div>
+          <div id="qaMessages" class="qa-messages" aria-live="polite"></div>
+          <form id="qaForm" class="qa-form">
+            <textarea id="qaInput" rows="2" maxlength="300" placeholder="问问今天的小白"></textarea>
+            <button id="qaSubmit" type="submit">发送</button>
+          </form>
+        </div>
+        <div class="qa-tail" aria-hidden="true"></div>
+      </aside>
+
+      <aside id="eventPanel" class="event-panel" hidden>
+        <div class="panel-header">
+          <strong id="panelTitle">最近事件</strong>
+          <button id="closePanel" type="button" title="关闭">×</button>
+        </div>
+        <div id="eventList" class="event-list"></div>
+      </aside>
+    </main>
+    <script src="./renderer.js"></script>
+  </body>
+</html>

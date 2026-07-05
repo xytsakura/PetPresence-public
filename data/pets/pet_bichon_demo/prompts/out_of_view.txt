@@ -1,0 +1,1 @@
+Create a short out-of-view animation for a small white bichon-style desktop companion dog. The pet should briefly move away from the main visible position or look like it wandered off, while staying appropriate for a desktop pet action. Keep the animation clean and easy to return from.

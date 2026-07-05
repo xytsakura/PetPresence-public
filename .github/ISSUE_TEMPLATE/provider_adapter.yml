@@ -1,0 +1,54 @@
+name: Provider adapter
+description: Propose, debug, or review a video generation provider adapter.
+title: "[Provider]: "
+labels:
+  - provider-adapter
+body:
+  - type: markdown
+    attributes:
+      value: |
+        PetPresence does not bundle commercial video providers by default. Provider adapters must keep API keys private, require explicit upload confirmation for reference media, and output the standard provider JSON contract.
+  - type: input
+    id: provider
+    attributes:
+      label: Provider name
+      placeholder: example-local-synthetic, local-import, your-provider-name
+    validations:
+      required: true
+  - type: dropdown
+    id: request_type
+    attributes:
+      label: Request type
+      options:
+        - I want to implement a new adapter
+        - My adapter contract validation fails
+        - My provider job fails or times out
+        - The downloaded video is not usable
+        - I want a docs or cookbook improvement
+    validations:
+      required: true
+  - type: textarea
+    id: contract
+    attributes:
+      label: Provider JSON contract
+      description: Paste the provider result after redacting private paths, URLs, job IDs, and keys.
+      render: json
+  - type: textarea
+    id: validation
+    attributes:
+      label: provider:validate-result output
+      render: text
+      placeholder: npm run provider:validate-result -- --input outputs/generated/<pet_id>/provider-result.json --pet-id <pet_id> --action <action>
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Adapter boundaries
+      options:
+        - label: The adapter reads API keys from environment variables, not committed files.
+          required: true
+        - label: The adapter requires explicit confirmation before uploading reference images or videos.
+          required: true
+        - label: The adapter writes MP4 output under outputs/generated/<pet_id>/<action>.mp4.
+          required: true
+        - label: The adapter leaves manifest updates to pet:add-action.
+          required: true

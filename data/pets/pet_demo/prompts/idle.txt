@@ -1,0 +1,7 @@
+Create a short 4.0-second video of Demo Pet, a synthetic, for a desktop pet "idle" animation.
+Pet identity notes: A synthetic public fixture used to verify the open-source creator pipeline.
+Motion: front-facing, mostly still, subtle breathing, tiny head or body movement.
+Keep the camera stable and the full body visible.
+Use a clean plain background with soft lighting.
+The pet should remain recognizable and centered enough for foreground extraction.
+No text, no watermark, no subtitles, no extra objects, no camera shake.

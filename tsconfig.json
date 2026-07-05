@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "noUncheckedIndexedAccess": true
+  },
+  "include": [
+    "packages/**/*.ts",
+    "services/**/*.ts",
+    "scripts/creator/**/*.ts",
+    "scripts/providers/**/*.ts",
+    "scripts/release/**/*.ts"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "pet_id": "pet_bichon_demo",
+  "default_action": "idle",
+  "idle_action": "idle",
+  "version": "public-bichon-demo-v1",
+  "coordinate_system": {
+    "width": 512,
+    "height": 512,
+    "transparent_background": true
+  },
+  "assets": {
+    "idle": {
+      "type": "webm",
+      "path": "assets/pets/pet_bichon_demo/idle/idle.webm",
+      "transparent_background": true,
+      "loop": true,
+      "duration_ms": 5042,
+      "fallback_message": "I am here~"
+    },
+    "eat": {
+      "type": "webm",
+      "path": "assets/pets/pet_bichon_demo/eat/eat.webm",
+      "transparent_background": true,
+      "loop": false,
+      "duration_ms": 5042,
+      "fallback_message": "Snack time~"
+    },
+    "sleep": {
+      "type": "webm",
+      "path": "assets/pets/pet_bichon_demo/sleep/sleep.webm",
+      "transparent_background": true,
+      "loop": false,
+      "duration_ms": 3500,
+      "fallback_message": "Resting now~"
+    },
+    "alert": {
+      "type": "webm",
+      "path": "assets/pets/pet_bichon_demo/alert/alert.webm",
+      "transparent_background": true,
+      "loop": false,
+      "duration_ms": 5042,
+      "fallback_message": "Please check on me~"
+    },
+    "play": {
+      "type": "webm",
+      "path": "assets/pets/pet_bichon_demo/play/play.webm",
+      "transparent_background": true,
+      "loop": false,
+      "duration_ms": 5042,
+      "fallback_message": "Let us play~"
+    },
+    "out_of_view": {
+      "type": "webm",
+      "path": "assets/pets/pet_bichon_demo/out_of_view/out_of_view.webm",
+      "transparent_background": true,
+      "loop": false,
+      "duration_ms": 5042,
+      "fallback_message": "I wandered off~"
+    }
+  }
+}

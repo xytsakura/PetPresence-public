@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "pet_id": "pet_demo",
+  "trigger_type": "manual_check",
+  "routed_action": "eat",
+  "confidence": 0.99,
+  "visual_summary": "演示模式：小白靠近饭碗，正在干饭�?,
+  "owner_message": "我在干饭，汪~",
+  "alert_level": "normal",
+  "evidence_frames": [],
+  "needs_owner_attention": false
+}

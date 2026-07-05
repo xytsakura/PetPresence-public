@@ -1,0 +1,13 @@
+{
+  "pet_id": "pet_demo",
+  "name": "Demo Pet",
+  "species": "synthetic",
+  "description": "A synthetic public fixture used to verify the open-source creator pipeline.",
+  "speech_style": {
+    "max_chars": 24,
+    "tone": "short, warm, low-interruption",
+    "catchphrases": [
+      "boop"
+    ]
+  }
+}
