@@ -5,7 +5,7 @@ It is a non-destructive review aid. It does not run `git add`, `git rm`, or `git
 
 ## Summary
 
-- Stage: 8
+- Stage: 0
 - Keep deleted: 0
 - Do not stage: 0
 - Manual review: 0
@@ -24,16 +24,7 @@ No items.
 
 ## Suggested Stage
 
-| Path | Status | Group | Note |
-| --- | --- | --- | --- |
-| `docs/images/bichon-xiaobai.jpg` | `??` | public-release-surface | Intended first public release surface or release tooling. |
-| `docs/images/petpresence-hackathon-poster.png` | `??` | public-release-surface | Intended first public release surface or release tooling. |
-| `docs/open_source_release_audit.md` | ` M` | public-release-surface | Intended first public release surface or release tooling. |
-| `docs/release_asset_decisions.json` | ` M` | public-release-surface | Intended first public release surface or release tooling. |
-| `docs/release_asset_review.md` | ` M` | public-release-surface | Intended first public release surface or release tooling. |
-| `README.md` | ` M` | public-release-surface | Intended first public release surface or release tooling. |
-| `scripts/release/audit-public-assets.ts` | ` M` | public-release-surface | Intended first public release surface or release tooling. |
-| `scripts/release/check-readiness.ts` | ` M` | public-release-surface | Intended first public release surface or release tooling. |
+No items.
 
 ## Safe Use
 
