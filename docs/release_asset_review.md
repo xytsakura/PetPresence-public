@@ -12,7 +12,7 @@ The public release keeps exactly two fixture families and approved README visual
 - cleaned ready-to-run `pet_bichon_demo`.
 - `docs/images/bichon-xiaobai.jpg` as the public Bichon demo photo;
 - `docs/images/creator-pipeline-workflow.svg` as the creator pipeline workflow diagram;
-- lightweight transparent animated WebP previews generated from the approved `pet_bichon_demo` WebM runtime assets.
+- lightweight transparent APNG previews generated from the approved `pet_bichon_demo` WebM runtime assets.
 
 The release does not include source videos, raw private workspaces, extracted frames, event logs, generated reports, alpha previews, contact sheets, checker images, local model outputs, `.env` files, or API keys.
 
@@ -74,9 +74,9 @@ README visuals:
 ```text
 docs/images/bichon-xiaobai.jpg
 docs/images/creator-pipeline-workflow.svg
-docs/images/bichon-demo-idle.webp
-docs/images/bichon-demo-play.webp
-docs/images/bichon-demo-sleep.webp
+docs/images/bichon-demo-idle.png
+docs/images/bichon-demo-play.png
+docs/images/bichon-demo-sleep.png
 ```
 
 ## Keep Out Of The Public Release

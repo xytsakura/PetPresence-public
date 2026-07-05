@@ -14,6 +14,7 @@ The public repository intentionally does not expose the full private hackathon h
 - `zhu-zhu666` - hackathon collaborator
 - `Wyh-max-star` - hackathon collaborator
 - `zhujiandong` - invited hackathon collaborator
+- `LvShaoran` - project collaborator
 
 ## Historical Commit Credit
 

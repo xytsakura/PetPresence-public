@@ -10,7 +10,7 @@
 
 ## Team Acknowledgements
 
-PetPresence began as a hackathon project led by `xytsakura`, with collaboration from `fhx020826`, `KKqdtjo`, `de2-a`, `liam-harrison1`, `zhu-zhu666`, `Wyh-max-star`, and `zhujiandong`.
+PetPresence began as a hackathon project led by `xytsakura`, with collaboration from `fhx020826`, `KKqdtjo`, `de2-a`, `liam-harrison1`, `zhu-zhu666`, `Wyh-max-star`, `zhujiandong`, and `LvShaoran`.
 
 This public repository is a clean-history open-source release. The original private hackathon repository remains preserved as the team archive, including the earlier collaboration and commit history. See [CONTRIBUTORS.md](CONTRIBUTORS.md) for the full acknowledgement.
 
@@ -34,9 +34,9 @@ The first public release has two release surfaces:
 ## Demo Preview
 
 <p align="center">
-  <img src="docs/images/bichon-demo-idle.webp" alt="Xiaobai idle desktop pet animation" width="220" />
-  <img src="docs/images/bichon-demo-play.webp" alt="Xiaobai play desktop pet animation" width="220" />
-  <img src="docs/images/bichon-demo-sleep.webp" alt="Xiaobai sleep desktop pet animation" width="220" />
+  <img src="docs/images/bichon-demo-idle.png" alt="Xiaobai idle desktop pet animation" width="220" />
+  <img src="docs/images/bichon-demo-play.png" alt="Xiaobai play desktop pet animation" width="220" />
+  <img src="docs/images/bichon-demo-sleep.png" alt="Xiaobai sleep desktop pet animation" width="220" />
 </p>
 
 ## Quickstart
